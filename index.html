@@ -1,1 +1,131 @@
-Home page will be updated soon
+<!DOCTYPE html>
+<html lang="en">
+<title>Changlai Du</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+    .mySlides {display:none}
+    .w3-tag, .fa {cursor:pointer}
+    .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+    p.pmargin
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    a.anchor{
+        display: block;
+        content ="";
+        position: relative;
+        top: -80px;
+        visibility: hidden;
+    }
+
+    div.sfix
+    {
+        content: " ";
+    }
+</style>
+
+<head>
+
+</head>
+
+
+<body>
+<!-- top bar -->
+<div class="w3-top">
+
+    <div class="w3-row w3-large" style="background-color:#861F41;color:white">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="service.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Service</a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Research</a>
+        <a href="publication.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Publication</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-white">Home</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>    
+        <a href="publication.html" class="w3-bar-item w3-button w3-padding-large">Publication</a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-large">Research</a>
+        <a href="service.html" class="w3-bar-item w3-button w3-padding-large">Service</a>  
+    </div>
+</div>
+
+
+<div class="w3-content" style="max-width:1080px;margin-top:100px;margin-bottom:80px">
+<!--     <div class ='w3-center w3-padding-32'>
+        <span class="w3-xxlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Publications</span>
+    </div> -->
+    <div class="w3-row-padding" id="front">
+        <div class="w3-third">
+    <!-- <div class="w3-card-4"> -->
+            <h2><p class="pmargin">
+            <center>
+            <img class="w3-center" src="media/changlai.jpg" style="width:200px; height:200px; " align="middle">
+            </center>
+            </p></h2>
+        <!-- </div> -->
+        </div>
+
+        <div class="w3-twothird">
+            <h3> <p class="pmargin w3-text-black"> Changlai Du </p></h3>
+            <h6>
+                <p class="pmargin">
+                Postdoctoral Associate
+                <br>Department of Computer Science, Virginia Tech
+                <br>Email: cdu@vt.edu
+                <br>Phone: (215) 450-1610
+                <br><a href="https://scholar.google.com/citations?user=v7UR83sAAAAJ&hl=en" style="color:blue">Google Scholar</a>
+                <a href="cv_changlai.pdf" style="color:blue">CV</a>
+                </p>
+            </h6>
+        </div>
+    </div>
+
+    <h3> <p class="pmargin w3-text-indigo"> About Me </p></h3>
+    <h6>
+        <p class="pmargin">
+        I am an Postdoctoral Associate in the <a href="https://cs.vt.edu/" style="color:blue">Department of Computer Science</a> at the <a href="https://www.vt.edu/" style="color:blue">Virginia Tech</a>. My research area is <b>Cybersecurity</b>. I am particularly interested in security and privacy issues in wireless networks, distributed systems, and more recently next-G mobile networks. I enjoy analyzing the fundamental security and privacy challenges in these systems and developing novel solutions under the assumption of zero or limited trust.
+        I obtained my Ph.D. degree in Computer Science at Virginia Tech, supervised by <a href="https://www.cnsr.ictas.vt.edu/WJLou.html" style="color:blue">Dr. Wenjing Lou</a>. I received my master's degree in Computer Science from <a href="https://www.tsinghua.edu.cn/en/" style="color:blue">Tsinghua University</a> and bachelor's degree in Information Engineering from <a href="https://www.seu.edu.cn/english/" style="color:blue">Southeast University</a>.
+        </p>
+        <!-- <p class="pmargin"><b>I am looking for self-motivated students to work on security and privacy topics in blockchain, distributed systems, next-G mobile networks, among other exciting things. Check out <a href="members.html" style="color:red">Members</a> for details.</b></p> -->
+        
+    </h6>
+
+    <h3> <p class="pmargin w3-text-indigo"> News </p></h3>
+    <h6>
+        <p class="pmargin">
+        &#9726;&nbsp; [Mar 2023] I am invited to serve on IEEE ICCCN 2023 program committee. <br>       
+        &#9726;&nbsp; [Mar 2023] NSF awards our project on anti-mobile-tracking: "An Anti-tracking and Robocall-free Architecture for Next-G Mobile Networks".<br>
+        &#9726;&nbsp; [Oct 2022] I am invited to serve on IEEE MASS 2022 session chair. <br>       
+        &#9726;&nbsp; [Aug 2022] Our paper "Mobile Tracking in 5G and Beyond Networks: Problems, Challenges, and New Directions" is accepted by IEEE MASS 2022.
+        </p>
+    </h6>
+</div>
+
+<!-- <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ -->
+<script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    
+</script>
+
+</body>
+</html>

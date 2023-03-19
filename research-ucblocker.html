@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Changlai Du - UCBlocker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+    .mySlides {display:none}
+    .w3-tag, .fa {cursor:pointer}
+    .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+    p.pmargin
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    a.anchor{
+        display: block;
+        content ="";
+        position: relative;
+        top: -80px;
+        visibility: hidden;
+    }
+
+    div.sfix
+    {
+        content: " ";
+    }
+</style>
+
+<head>
+</head>
+
+
+<body>
+<!-- top bar -->
+<div class="w3-top">
+
+    <div class="w3-row w3-large" style="background-color:#861F41;color:white">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="service.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Service</a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Research</a>
+        <a href="publication.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Publication</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Home</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>    
+        <a href="publication.html" class="w3-bar-item w3-button w3-padding-large">Publication</a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-large">Research</a>
+        <a href="service.html" class="w3-bar-item w3-button w3-padding-large">Service</a>  
+    </div>
+    
+</div>
+
+<div class="w3-content" style="max-width:1080px;margin-top:100px;margin-bottom:80px">
+<!--     <div class ='w3-center w3-padding-32'>
+        <span class="w3-xxlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Publications</span>
+    </div> -->
+    <h3><p class="pmargin w3-center"><b>Unwanted Call Blocking Using Anonymous Authentication</b></p></h3>
+
+    <hr>
+    <div class="w3-row">
+        <div class="w3-half">
+        <center>
+            <p class="pmargin">
+            <img class="w3-center" src="media/ucblocker.png" style="width:500px; height:400; " align="middle">
+            </p>
+        </center>
+        </div>
+
+        <div class="longColumn">
+            <h4><p class="pmargin w3-text-indigo">
+            End-2-End Anonymous Authentication and One-Time Verification Code
+            </p></h4>
+            <h6><p class="pmargin">
+            In this project, we are designing a system called UCBlocker. It allows the callee to authenticate the caller based on the caller's attributes instead of phone numbers. We use anonymous credentials (ACs) for caller authentication. Before making a phone call, the caller is required to provide proof of certain attributes in her identity which satisfy the callee's pre-defined policies. The callee will issue a verification code to the caller if the authentication is successfully completed, which is inspired by two-factor authentication used by some web services. UCBlocker binds the authentication over data channel to the call session in telephone networks using this verification code.  Functionally, our design will: 1) allow calls from the callee’s contacts with minimal disruption; 2) allow unknown but callee-defined welcome calls to reach the callee; and 3) effectively block all unwanted calls out of the callee's preferences. Considering the numerous advantages for consumers including enhanced fraud protection, reduced disturbance and frustration, and less wasted time, as well as benefits to businesses and governments such as increasing the likelihood of customer engagement and enhancing trust, we hope UCBlocker will rebuild trust in telephone networks and revitalize the use of phone calls.
+            </p></h6>
+        </div>  
+    </div>
+
+    <hr>
+    <h4><p class="pmargin w3-text-indigo">Proposed Work</p></h4>
+    <h6>
+        <p class="pmargin">
+        &#9726; Collaborate with the Decentralized Identifiers (DIDs) and Self-Sovereign Identity (SSI) community to advocate the application and deployment of DID and SSI based on cryptographically verifiable anonymous credentials. 
+        <br>&#9726; Implement advanced predicate logics for the attributes of multiple credentials.
+        <br>&#9726; Extend the implementation of UCBlocker to real world mobile applications and provide the user-controlled unwanted call blocking service to the public. Design the hardware based UCBlocker Box to protect landline phones.
+        </p>
+    </h6>
+
+<!-- <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ -->
+<script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Changlai Du - Anti-Mobile-Tracking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+    .mySlides {display:none}
+    .w3-tag, .fa {cursor:pointer}
+    .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+    p.pmargin
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    a.anchor{
+        display: block;
+        content ="";
+        position: relative;
+        top: -80px;
+        visibility: hidden;
+    }
+
+    div.sfix
+    {
+        content: " ";
+    }
+</style>
+
+<head>
+</head>
+
+
+<body>
+<!-- top bar -->
+<div class="w3-top">
+
+    <div class="w3-row w3-large" style="background-color:#861F41;color:white">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="service.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Service</a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Research</a>
+        <a href="publication.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Publication</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Home</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>    
+        <a href="publication.html" class="w3-bar-item w3-button w3-padding-large">Publication</a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-large">Research</a>
+        <a href="service.html" class="w3-bar-item w3-button w3-padding-large">Service</a>  
+    </div>
+    
+</div>
+
+<div class="w3-content" style="max-width:1080px;margin-top:100px;margin-bottom:80px">
+<!--     <div class ='w3-center w3-padding-32'>
+        <span class="w3-xxlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Publications</span>
+    </div> -->
+    <h3><p class="pmargin w3-center"><b> Protecting User Location Privacy from Mobile Network Operators </b></p></h3>
+
+    <hr>
+    <div class="w3-row">
+        <div class="w3-half">
+        <center>
+            <p class="pmargin">
+            <img class="w3-center" src="media/anti-tracking.png" style="width:500px; height:300; " align="middle">
+            </p>
+        </center>
+        </div>
+
+        <div class="longColumn">
+            <h4><p class="pmargin w3-text-indigo">
+           Achieving Anonymity with Incoming-Call Routing and Accountability 
+            </p></h4>
+            <h6><p class="pmargin">
+                Mobile tracking is a serious privacy concern that worries many mobile phone users. Although several privacy-enhancing techniques have been added to the 5G network, the current system only protects mobile users' privacy against outsider attacks. As an insider, the mobile network operator (MNO) knows a mobile user's permanent identifier and its associated access history, thus can easily locate a mobile user and create a mobility profile or activity profile about this user. 
+            </p></h6>
+
+            <h6><p class="pmargin">
+                The objectives of this project include 1) Anonymity: legitimate mobile subscribers can access the network anonymously, without revealing their unique (real) ID; different connections made by the same user at different times shall not be linkable. This is the foundation for disabling mobile tracking and mobile profiling. 2) Accountability: Although the MNO alone cannot identify or profile a user, the design allows identification of a UE and recovery of its mobility history under legal intervention, e.g., when the MNO is working with an authorized law enforcement entity (with a warrant). 3) Utility: Support of the important mobile network functions, particularly the voice call function and billing. The current mobile system relies on the knowledge of UE's location to direct phone calls. The new system should be able to direct phone calls to the desired callees without actually knowing who the callees are. The new system should also support the popular charging plans: monthly limited or unlimited plans or pay-as-you-go without knowing the real user ID for each connection made. 4) User-controlled privacy: Privacy is ultimately context-specific and an individual user's own choice. Our design will allow users to control the level of privacy they will risk under their own mobile phone use contexts. 5) Scalability and efficiency: Privacy enhancement technology will introduce additional overhead, at both MNOs and UEs. Our architecture design must be scalable to support a massive number of distributed mobile users and the execution be efficient to operate using the currently available mobile hardware.
+            </p></h6>
+
+            <h6><p class="pmargin">
+                Our solution includes an anonymous authentication mechanism that allows the UE to retrieve a temporary identifier which we call Subscription Temporary Identifier (SUTI) to replace Subscription Permanent Identifier (SUPI). SUTI can be refreshed by the user through the eSIM profile provisioning. To enable call routing, we propose a novel callee discovery process in which the caller is responsible for finding the random ID (SUTI) used by the callee at the time of calling, and then passing this SUTI to his SN for call routing. Accountability is achieved in the design of the credentials.
+            </p></h6>
+        </div>  
+    </div>
+
+    <hr>
+    <h4><p class="pmargin w3-text-indigo">Proposed Work</p></h4>
+    <h6>
+        <p class="pmargin">
+        &#9726; Quantify location privacy and automate user-controlled privacy protection. The goal is twofold: (1) developing an analytical framework to quantify a UE's privacy risk associated to MNO's knowledge of various side information and attack methods and (2) developing practical SUTI refreshing strategies for a UE to ensure sufficient location privacy while factoring in the trade-off with SUTI refreshing overhead.
+        <br>&#9726; Anonymize the eSIM profile provisioning process. This can be achieved using an anonymous authentication based on the credentials issued by the eSIM manufacturer. 
+        </p>
+    </h6>
+
+<!-- <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ -->
+<script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+</script>
+
+</body>
+</html>
